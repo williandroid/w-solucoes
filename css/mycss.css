@@ -1,0 +1,45 @@
+/* ==========================================================================
+   CSS personalizado
+   ========================================================================== */
+
+
+.copyright{
+    margin-top:60px;
+    width:auto;
+    height:60px;
+    background:#eee;
+}
+.copyright footer{    
+    width:auto;
+    margin:0 auto;
+}
+.copyright footer p{
+    color: #265d72;
+    padding-top: 23px;
+    text-align: center;
+}
+
+#form {
+    background-color: #ddd;
+    width: 50%;
+    margin: auto;
+    padding: 0 10px 10px 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+
+    #form {
+        background-color: #ddd;
+        width: 100%;
+        margin: auto;
+        padding: 0 10px 10px 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+        box-shadow: none;
+    }
+}
