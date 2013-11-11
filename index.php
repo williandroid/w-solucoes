@@ -7,7 +7,7 @@ $tpl = new Template("layout.html");
 $tpl->PAGATUAL = "Home";
 
 // Adicionando mais um arquivo HTML 
-$tpl->addFile("CONTEUDO", "index.html");
+$tpl->addFile("CONTEUDO", "index__.html");
 
 $tpl->show();
 ?>
