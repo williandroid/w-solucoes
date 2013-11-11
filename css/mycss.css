@@ -19,6 +19,9 @@
     text-align: center;
 }
 
+.col-md-4 ul li {
+    list-style:none; 
+}
 #form {
     background-color: #ddd;
     width: 50%;
