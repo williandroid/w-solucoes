@@ -181,7 +181,7 @@ class PHPMailer {
    * Sets the default SMTP server port.
    * @var int
    */
-  public $Port        = 25;
+   public $Port        = 587;
 
   /**
    * Sets the SMTP HELO of the message (Default is $Hostname).
@@ -482,7 +482,7 @@ class PHPMailer {
       ini_set('sendmail_from', $this->Sender);
       if ($this->SingleTo === true && count($toArr) > 1) {
         foreach ($toArr as $key => $val) {
-          $rt = @mail($val, $this->EncodeHeader($this->SecureHeader($this->Subject)), $body, $header, $params);
+          $rt = @mail($val, $this->EncodeHeader($this->SecureHeader($this->Subject)), $body, $header, "-r" . $params);
         }
       } else {
         $rt = @mail($to, $this->EncodeHeader($this->SecureHeader($this->Subject)), $body, $header, $params);
