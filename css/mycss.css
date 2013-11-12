@@ -20,8 +20,28 @@
 }
 
 .col-md-4 ul li {
-    list-style:none; 
+    list-style:none;
+    padding : 0px;
 }
+.col-md-4 {
+     padding : 0px 0px 0px 0px;
+     margin-bottom: 0px;
+}
+.jumbotron {
+    padding: 1%;    
+}
+
+ul.thumbnails {
+    margin-bottom: 0px;
+    padding : 0px 20px 0px 20px;
+}
+.thumbnail{
+    border: 0%;
+    border-color: #eee;
+}
+
+
+
 #form {
     background-color: #ddd;
     width: 50%;
