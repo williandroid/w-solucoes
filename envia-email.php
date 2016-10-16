@@ -8,7 +8,7 @@ require("Template.class.php");
 $tpl = new Template("layout.html");
 $tpl->PAGATUAL = "Enviado";
 
-$destino = "ottoniwillian@gmail.com";
+$destino = "";
 
 $nome = $_POST['cpNomeEmpresa'];
 $email = $_POST['cpEmail'];

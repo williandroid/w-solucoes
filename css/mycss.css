@@ -73,10 +73,6 @@ ul.thumbnails {
     }
 }
 
-.carousel{
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
 
 
 /* Featurettes
@@ -128,13 +124,6 @@ ul.thumbnails {
         margin: -20px 0;
     }
 
-    .carousel .item {
-        height: 500px;
-    }
-    .carousel img {
-        width: auto;
-        height: 500px;
-    }
 
     .featurette {
         height: auto;
@@ -156,35 +145,11 @@ ul.thumbnails {
         margin: -20px;
     }
 
-    .carousel {
-        margin-left: -20px;
-        margin-right: -20px;
-    }
-    .carousel .item {
-        height: 100%;
-    }
-    .carousel img {
-        height: 100%;
-    }
-    
+
     .btn {
         width: 100%;
     }
-    .carousel-caption {
-        width: 65%;
-        padding: 0 70px;
-        margin-top: 100px;
-    }
-    .carousel-caption h1 {
-        font-size: 100%;
-    }
-    .carousel-caption p {
-        font-size: 10px;
-    }
-    .carousel-caption .lead,
-    .carousel-caption .btn {
-        font-size: 100%;
-    }
+
 
     .featurette-heading {
         font-size: 30px;
@@ -193,7 +158,5 @@ ul.thumbnails {
         font-size: 18px;
         line-height: 1.5;
     }
-    .carousel-indicators{
-       visibility: hidden;
-    }
+
 }
