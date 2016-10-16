@@ -1,38 +1,27 @@
-#form-head {
-    text-align: center;
+body{
+    min-height: 100vh;
+    background-color: #CCC;
+    background-image: url('https://unsplash.it/g/1500/800?random');
 }
 
-#login-form {
-    background-color: #ddd;
-    width: 35%;
-    margin: auto;
-    padding: 0 10px 10px 10px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 4px 4px 0 0;
-    box-shadow: none;
+.login-form {
+    margin-top: 50vh;
+    padding: 20px 30px;
+    background-color: rgba(0,0,0,.9);    
+    color: #FFF;
+    transform: translateY(-50%); /**Traduz o tamanho do form*/
 }
 
-@media (max-width: 400px) {
-        #login-form {
-        background-color: #ddd;
-        width: 100%;
-        margin: auto;
-        padding: 0 10px 10px 10px;
-        background-color: #fff;
-        border: 1px solid #ddd;
-        border-radius: 4px 4px 0 0;
-        box-shadow: none;
-    }
+.text-center{
+    color: #CCC;
 }
 
-.form-control {
-    margin-bottom:10px;
+.login-form h1{
+    margin: 0 0 5px; /*Quando tenho 3 valores o 1 é para cima, 2 direita e esquerda e 3 baixo*/
+    
 }
 
-#form-head {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px;
-    line-height: 1.428571429;
-    color: #333338;
+.login-form h2{
+    margin: 0 0 30px; /*Quando tenho 3 valores o 1 é para cima, 2 direita e esquerda e 3 baixo*/
+    font-size: 1em;
 }

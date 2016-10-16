@@ -58,8 +58,10 @@ ul.thumbnails {
     border-radius: 4px 4px 0 0;
     box-shadow: none;
 }
-
-@media (max-width: 600px) {
+.carousel{
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
 
     #form {
         background-color: #ddd;
@@ -70,6 +72,21 @@ ul.thumbnails {
         border: 1px solid #ddd;
         border-radius: 4px 4px 0 0;
         box-shadow: none;
+    }
+
+    .carousel-caption p{
+        font-size: 10px;
+    }
+    .carousel-caption h3{
+        font-size: 15px;
+    }
+
+    .left carousel-control a{
+        visibility: hidden;
+    } 
+
+    .carousel{
+        margin-bottom: 10px;
     }
 }
 

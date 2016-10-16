@@ -9,7 +9,7 @@
         <meta name="author" content="">
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/mycss.css" rel="stylesheet">
-        <link href="css/login.css" rel="stylesheet">
+        
 
         <meta name="author" content="">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -33,80 +33,51 @@
 
     </head>
 
-    <body class="">
-        <div class="navbar navbar-default navbar-static-top">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
-                    <span class="icon-bar"></span><span class="icon-bar"></span>
-                </button><a class="navbar-brand" href="index.php">W-Soluções</a>
-            </div>
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="">
-                        <a href="index.php">Home</a>
-                    </li>
-                    <li>
-                        <a href="contato.php">Fale Conosco</a>
-                    </li>
-
-                    <li>
-                        <a href="login.php">Login</a>
-                    </li>
-
-                    <li>
-                        <a href="http://184.172.158.158:2095/logout/?locale=pt_br">Web-Email</a>
-                    </li>
-
-                    <!--<li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastre-se <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="cadastro.php">Pessoa Física</a>
-                            </li>
-
-                            <li>
-                                <a href="cadastro-empresa.php">Pessoa Jurídica</a>
-                            </li>
-                        </ul>
-                    </li>-->
-                </ul>
-            </div>
-        </div>
-
+    <body>
         <!--Corpo do Site-->
-        <div class="container">           
+        <div class="container"> 
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span>
+                        <span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button><a class="navbar-brand" href="index.php">W-Soluções</a>
+                </div>
+                <div class="collapse navbar-collapse navbar-ex1-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="">
+                            <a href="index.php">Home</a>
+                        </li>
+                        <li>
+                            <a href="contato.php">Fale Conosco</a>
+                        </li>
 
+                        <li>
+                            <a href="login.php">Login</a>
+                        </li>
 
-            <div class="row">
-                <div class="col-md-3">
-                    <ul class="nav nav-stacked nav-pills">
-                        <li>Anúncios
-                            <img class="img-responsive" src="images/anuncie_aqui.gif">
+                        <li>
+                            <a href="http://184.172.158.158:2095/logout/?locale=pt_br">Web-Email</a>
                         </li>
-                        <li>Assuntos
-                        </li>
-                        <li><a href="#">Notícias</a>
-                        </li>
-                        <li><a href="#">Matemática</a>
-                        </li>
-                        <li><a href="#">Lógica</a>
-                        </li>
-                        <li><a href="#">Android</a>
-                        </li>
-                        <li><a href="#">C# sharp</a>
-                        </li>
-                        <li><a href="#">Java</a>
-                        </li>
+
+                        <!--<li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Cadastre-se <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="cadastro.php">Pessoa Física</a>
+                                </li>
+    
+                                <li>
+                                    <a href="cadastro-empresa.php">Pessoa Jurídica</a>
+                                </li>
+                            </ul>
+                        </li>-->
                     </ul>
                 </div>
-                <div class="col-md-9">
-                    <!--Conteúdo do Site-->
-                    {CONTEUDO}
-                </div>
-
-            </div>            
-        </div>
-
+            </div>
+            <hr>
+            <!--Conteúdo do Site-->
+            {CONTEUDO}
+        </div>            
 
 
         <!-- Linha completa o container todo -->
@@ -117,12 +88,6 @@
             Contato: (32)3281-3064 - (32)84074824
 
         </p>
-
-        <!--<div class="container-fluid copyright">
-            <footer>
-                <p>&copy; W-Soluções -  Todos os Direitos Reservados 2013</p>
-            </footer>
-        </div>-->
 
     </body>
 
