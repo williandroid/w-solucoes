@@ -8,19 +8,21 @@ require("Template.class.php");
 $tpl = new Template("layout.html");
 $tpl->PAGATUAL = "Enviado";
 
-$destino = "";
+$destino = "ottoniwillian@gmail.com";
 
 $nome = $_POST['cpNomeEmpresa'];
 $email = $_POST['cpEmail'];
-$mensagem = $_POST['txMensagem'];
+$mensage = $_POST['txMensagem'];
 
 
 $_POST['msg'] = 0;
 if ($nome != "" && $email != "") {
 
-    $mensagem = "<strong>Nome: </strong>" . $nome;    
-    $mensagem .= "<br><strong>Mensagem: </strong>" . $mensagem;
-    $mensagem .= "<strong>Email: </strong>" . $email;
+      
+    
+    $mensagem = "<strong>Nome: </strong>" . $nome;  
+    $mensagem .= "<br><strong>Email: </strong>" . $email;
+    $mensagem .= "<br><strong>Mensagem: </strong>" . $mensage;
 
     $headers = "Content-Type:text/html; charset=UTF-8";
     $headers .= "From: dominio.com.br<sistema@wsolucoes.com.br>n"; //Vai ser mostrado que o email partiu deste email e seguido do nome
@@ -30,7 +32,7 @@ if ($nome != "" && $email != "") {
     $headers .= "Return-Path: <no-reply@wsolucoes.com.br>n"; //caso a msg seja respondida vai para este email.
     $headers .= "MIME-Version: 1.0n";
 
-    $envio = mail($destino, "Assunto", $mensagem, $headers);
+    $envio = mail($destino, "Mensagem de: ".$nome, $mensagem, $headers);
 
 
 
