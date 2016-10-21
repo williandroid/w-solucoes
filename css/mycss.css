@@ -1,7 +1,10 @@
 /* ==========================================================================
    CSS personalizado
    ========================================================================== */
-
+/*Coloca os campos a baixo do menu*/
+.container {
+    padding-top: 3%;
+}
 
 .copyright{
     margin-top:60px;
@@ -32,11 +35,6 @@
     margin: 1%;
 }
 
-.navbar {
-
-    margin: 0px;
-}
-
 ul.thumbnails {
     margin-bottom: 0px;
     padding : 0px 20px 0px 20px;
@@ -46,7 +44,13 @@ ul.thumbnails {
     border-color: #eee;
 }
 
+.logotipo img{
+    height: 30px;    
+}
 
+.logotipo {
+    padding: 10px;
+}
 
 #form {
     background-color: #ddd;
@@ -58,9 +62,14 @@ ul.thumbnails {
     border-radius: 4px 4px 0 0;
     box-shadow: none;
 }
-.carousel{
-    margin-bottom: 10px;
+@media (max-width: 768px) {
+        /*Coloca os campos a baixo do menu*/
+    .container {
+        padding-top: 6%;
+    }
 }
+
+
 @media (max-width: 767px) {
 
     #form {
@@ -87,6 +96,28 @@ ul.thumbnails {
 
     .carousel{
         margin-bottom: 10px;
+    }
+    
+    /*Coloca os campos a baixo do menu*/
+    .container {
+        padding-top: 15%;
+    }
+
+    .navbar-inner {
+        margin: -20px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+
+
+    .featurette-heading {
+        font-size: 30px;
+    }
+    .featurette .lead {
+        font-size: 18px;
+        line-height: 1.5;
     }
 }
 
@@ -122,58 +153,3 @@ ul.thumbnails {
     letter-spacing: -1px;
 }
 
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-/* RESPONSIVE CSS
-   -------------------------------------------------- */
-
-@media (max-width: 979px) {
-
-    .container.navbar-wrapper {
-        margin-bottom: 0;
-        width: auto;
-    }
-    .navbar-inner {
-        border-radius: 0;
-        margin: -20px 0;
-    }
-
-
-    .featurette {
-        height: auto;
-        padding: 0;
-    }
-    .featurette-image.pull-left,
-    .featurette-image.pull-right {
-        display: block;
-        float: none;
-        max-width: 40%;
-        margin: 0 auto 20px;
-    }
-}
-
-
-@media (max-width: 767px) {
-
-    .navbar-inner {
-        margin: -20px;
-    }
-
-
-    .btn {
-        width: 100%;
-    }
-
-
-    .featurette-heading {
-        font-size: 30px;
-    }
-    .featurette .lead {
-        font-size: 18px;
-        line-height: 1.5;
-    }
-
-}
